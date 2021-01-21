@@ -16,3 +16,17 @@ Disable onboard led
 ```
 echo mmc0 > /sys/class/leds/led0/trigge
 ```
+
+Put drive-wipe.service to following directory
+```
+/etc/systemd/system
+```
+Reload systemd daemon
+```
+systemctl daemon-reload
+```
+Enable and start drive-weip service
+```
+sudo systemctl enable drive-wipe
+sudo systemctl start drive-wipe
+```
